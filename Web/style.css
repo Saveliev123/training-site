@@ -1,0 +1,287 @@
+body{
+  background-image:url(bg.jpg);
+  background-size: auto;
+  height: auto;
+  width: auto;
+}
+
+.powered {
+  /*display: none;
+  visibility: hidden;*/
+}
+
+#wrapper{ 
+  width: 900px;
+  margin: 0 auto;
+  background:#76b900;
+  padding: auto;
+}
+
+#header{
+  position:relative; 
+  height: 190px;
+  background-image: url(images.jpg);
+  margin-bottom: 5px;
+  border-radius: 5px;
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px;
+  font: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+
+#button{
+   margin: 2% auto;
+}
+
+h1{ 
+  margin:0 0 10px 40px;
+  color:#76b900; 
+}
+
+#content{ 
+  margin-bottom: 5px; 
+  width: auto; 
+  padding: 10px; 
+  background: #ffffff; 
+  border-radius: 5px;
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px;
+}
+
+.left{ 
+  float: left;
+  margin: 30px 7px 7px 7px;
+}
+.right{ 
+  float: right;
+  margin: 7px 0 7px 7px;
+}
+
+#footer{ 
+  height:80px; 
+
+  background-color: #ffffff; 
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px;
+}
+.clear{
+  clear: both;
+}
+
+nav{
+    width: 100%;
+    margin-bottom: 5px; 
+    border-radius: 5px; 
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    box-shadow: rgba(0,0,0,0.5) 0px 1px 3px;
+    }
+*{
+    box-sizing: border-box;
+    /* border: 1px solid #000; */
+}
+
+#burger, [for=burger]{
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .container{
+        width: 80%;
+    }          
+    [for=burger]{
+        display: block;
+        position: fixed;
+        width: 30px;
+        text-align: center;
+        right: 20px;
+        top: 10px;
+    }
+    [for=burger]::before{
+        content: '☰';
+    }
+    nav{
+        display: none;
+        position: fixed;
+        top: 0;
+        margin-top: 30px;
+        background: rgba(216, 243, 253, 0.692);
+        width: 80%;
+        user-select: none;
+    }
+    #burger:checked + label + nav{
+        display: block;
+        animation: show .5s ease;
+    }
+    #burger:checked +[for=burger]::before{
+        content: '⮾';
+    }
+}
+
+@keyframes show {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#current_date_time_block2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	padding: 25px;
+	font-size: 20px;
+}
+
+#news {
+	background: #76b900;
+	width:auto;
+	border: solid;
+	margin: 10px;
+	padding: 10px 10px;
+
+}
+
+.btn-success{
+  background: #76b900;
+  border-color: #000000; 
+}
+
+.easynetshop-gotocart, 
+.easynetshop-goorder, 
+.easynetshop-doorder {   
+	background-color: #76b900; 
+   /* Цвет фона */   
+	color: #ffffff; 
+  /* Цвет текста */
+	border-color: #000000; 
+  /* Цвет рамки */
+}
+
+/* При наведении на Перейти в корзину, Перейти к заказу и Оформить заказ */
+.easynetshop-gotocart:hover,  
+.easynetshop-goorder:hover, 
+.easynetshop-doorder:hover {  
+	background-color: #76b900; 
+	/* Цвет фона */    
+	color: #ffffff; 
+	/* Цвет текста */
+	border-color: #000000; 
+	/* Цвет рамки */
+}
+
+#enscart_image_wrapper { 
+  background-color: #76b900; 
+} 
+
+.btn-ens-style {
+  background-color: #76b900 ; /* Цвет фона кнопки */
+  color: #ffffff; /* Цвет текста */
+  border-color: #000000; /* Цвет рамки */ 
+  border-radius: 5px; /* Радиус скругления углов кнопки */
+  font-size: 15px; /* Размер шрифта текста */
+  padding-left: 15px; /* Отступ текста слева */ 
+  padding-right: 15px; /* Отступ текста справа */ 
+  padding-top: 5px; /* Отступ текста сверху */ 
+  padding-bottom: 5px; /* Отступ текста снизу */ 
+  
+}
+
+.easynetshop-modal-header{
+
+  /* display: none; */
+  color: #ffffff;
+  background-color: #ffffff;
+  element.style {
+  color: #ffffff;
+  
+}
+.easynetshop-cross-caption, .easynetshop-modal-caption{
+  color: #000000;
+}
+
+
+.easynetshop-deliveryoptions{
+  /*display: none;
+  /*visibility: hidden;*/
+}
+
+.easynetshop-modalcontainer { z-index:2000; }
+.easynetshop-modal-fade-wrapper { z-index: 1999; }
+#enscart_wrapper { z-index: 1998; }
+//
+.wrapper {
+        display: inline-flex;
+}
+
+.wrapper .icon {
+  position: fixed;
+  background-color: #AE978F;
+  right: 0px;
+  bottom: 0px;
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background-color: #000000;
+  color: #000000;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: #000000;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .whatsapp:hover,
+.wrapper .whatsapp:hover .tooltip,
+.wrapper .whatsapp:hover .tooltip::before {
+  background-color: #76b900;
+  color: #000000;
+}
